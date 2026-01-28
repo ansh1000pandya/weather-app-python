@@ -10,7 +10,7 @@ def get_weather():
     if city=="":
         messagebox.showwarning("Warning", "Please enter the a city name")
         return
-    api_key = "bada6824596db1bcea6623f3647825d2"
+    api_key = "your api key"
     url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
     try:
         response = requests.get(url)
